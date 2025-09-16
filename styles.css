@@ -26,39 +26,28 @@
     --dark-green: #00a86b;
     --black: #0a0a0a;
     --white: #ffffff;
-    --gray-light: #181818;
+    --gray-light: #181818; /* Changed from #f8fafc */
     --gray-medium: #64748b;
-    --gray-dark: #e5e5e5;
-    --tech-blue: #00b4d8;
-    --modern-purple: #6a0dad;
-    --secondary-bg: #2a2a2a;
+    --gray-dark: #e5e5e5; /* Changed from #334155 */
     --shadow-light: 0 4px 6px -1px rgb(0 0 0 / 0.1);
     --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1);
     --shadow-large: 0 25px 50px -12px rgb(0 0 0 / 0.25);
     --gradient-primary: linear-gradient(135deg, var(--primary-green), var(--dark-green));
     --gradient-dark: linear-gradient(135deg, #1a1a1a, var(--black));
-    --gradient-tech: linear-gradient(135deg, var(--tech-blue), var(--modern-purple));
 }
 
 body {
-    background: #000000;
-    color: var(--white);
+    background: #000000; /* Changed from #f8fafc */
+    color: #ffffff; /* Changed from #222 */
 }
 
-/* Fondo animado dinámico */
+/* Fondo animado claro */
 .bg-animation {
-    background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #2a2a2a, #3a3a3a);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #2a2a2a, #3a3a3a); /* Darker gradient */
 }
 
 /* Imágenes de servicios más grandes y redondeadas */
+
 .service-item img {
     height: 160px;
     width: 160px;
@@ -66,17 +55,32 @@ body {
     object-fit: cover;
     border-radius: 12px;
     box-shadow: var(--shadow-light);
-    background: var(--gray-light);
+    background: #181818; /* Changed from #f8fafc */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+
 .service-item img:hover {
-    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.05);
     box-shadow: var(--shadow-medium);
 }
+:root {
+            --primary-green: #00d084;
+            --dark-green: #00a86b;
+            --black: #0a0a0a;
+            --white: #ffffff;
+            --gray-light: #181818; /* Changed from #f8fafc */
+            --gray-medium: #64748b;
+            --gray-dark: #e5e5e5; /* Changed from #334155 */
+            --shadow-light: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-medium: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-large: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --gradient-primary: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            --gradient-dark: linear-gradient(135deg, #1a1a1a, var(--black));
+        }
 
         * {
             margin: 0;
@@ -87,7 +91,7 @@ body {
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: var(--white);
+            color: var(--gray-dark);
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
@@ -100,9 +104,8 @@ body {
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: linear-gradient(-45deg, #0a0a0a, #1a1a1a, #2a2a2a, #3a3a3a);
-            background-size: 400% 400%;
-            animation: gradientShift 15s ease infinite;
+            background: #000000;
+            /* Se eliminan background-size y animation para dejar un fondo estático */
         }
 
         /* Header Styles */
