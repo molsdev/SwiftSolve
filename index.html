@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSolve - Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado decorativo -->
+    <div class="bg-animation"></div>
+
+    <!-- Encabezado principal con logo, título y botón de login -->
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 0.7rem;">
+                <img src="img/logo.png" alt="Logo SwiftSolve" style="height:48px; width:auto; object-fit:contain; display:block;" />
+                <a href="index.html" class="logo">SwiftSolve</a>
+            </div>
+            <h1 class="header-title">Innovación en Desarrollo de Software</h1>
+            <button class="login-btn" id="loginBtn">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal para Login (ventana emergente de inicio de sesión) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <form class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+
+                <button type="submit">
+                    <i class="fas fa-sign-in-alt"></i> Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <nav>
+        <div class="nav-content">
+            <a href="intro.html">Introducción</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="mision-vision.html">Misión & Visión</a>
+            <a href="valores.html">Valores</a>
+            <a href="paleta.html">Colores</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="metodologia.html">Metodología</a>
+            <a href="contactos.html">Contactos</a>
+            <div id="audioContainer" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                <button id="audioBtn" class="audio-btn">
+                    Audio
+                </button>
+                <audio id="audioPlayer" src="aud/Discurso.mp3" controls style="display: none; margin-left: 0.5rem; border-radius: 20px;"></audio>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de bienvenida -->
+    <section id="welcome" class="fade-in">
+        <h2>Bienvenido a SwiftSolve</h2>
+        <div class="card">
+            <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1.5rem;">Transformamos ideas en soluciones tecnológicas eficientes y escalables.</p>
+            <p>En SwiftSolve, creemos que la tecnología es el puente entre las ideas innovadoras y su materialización en el mundo real. Nuestra pasión por el desarrollo de software nos impulsa a crear soluciones que no solo resuelven problemas actuales, sino que anticipan las necesidades futuras de nuestros clientes.</p>
+            <p>Con un enfoque centrado en la calidad, la innovación y la eficiencia, trabajamos mano a mano con empresas de diversos sectores para desarrollar aplicaciones web, móviles y sistemas empresariales que optimicen procesos, aumenten la productividad y generen un impacto positivo en el mercado.</p>
+            <p>Nuestro equipo multidisciplinario combina experiencia técnica con visión estratégica, asegurando que cada proyecto se ejecute con los más altos estándares de calidad y siguiendo las mejores prácticas de la industria.</p>
+            <p>Somos una empresa especializada en el desarrollo de software, brindando herramientas innovadoras para optimizar procesos, mejorar la productividad y potenciar el crecimiento de negocios en diferentes industrias.</p>
+            <p>Nuestro equipo de expertos en programación y tecnología trabaja con pasión y compromiso para ofrecer productos de alta calidad, adaptados a las necesidades de cada cliente. Desde aplicaciones web y móviles hasta soluciones empresariales avanzadas, en SwiftSolve convertimos los desafíos en oportunidades a través de la tecnología.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="intro.html" class="cta-btn">Explorar Introducción</a>
+                <a href="servicios.html" class="cta-btn secondary">Ver Servicios</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de navegación rápida -->
+    <section id="quick-nav" class="fade-in">
+        <h2>Navega por Nuestras Secciones</h2>
+        <div class="quick-nav-grid">
+            <a href="intro.html" class="nav-card card">
+                <i class="fas fa-home"></i>
+                <h3>Introducción</h3>
+                <p>Conoce nuestra empresa y visión</p>
+            </a>
+            <a href="estructura.html" class="nav-card card">
+                <i class="fas fa-sitemap"></i>
+                <h3>Estructura</h3>
+                <p>Organización y equipos</p>
+            </a>
+            <a href="mision-vision.html" class="nav-card card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Misión & Visión</h3>
+                <p>Nuestros objetivos y futuro</p>
+            </a>
+            <a href="valores.html" class="nav-card card">
+                <i class="fas fa-gem"></i>
+                <h3>Valores</h3>
+                <p>Principios que nos guían</p>
+            </a>
+            <a href="paleta.html" class="nav-card card">
+                <i class="fas fa-palette"></i>
+                <h3>Colores</h3>
+                <p>Identidad visual</p>
+            </a>
+            <a href="servicios.html" class="nav-card card">
+                <i class="fas fa-cogs"></i>
+                <h3>Servicios</h3>
+                <p>Lo que ofrecemos</p>
+            </a>
+            <a href="metodologia.html" class="nav-card card">
+                <i class="fas fa-tasks"></i>
+                <h3>Metodología</h3>
+                <p>Cómo trabajamos</p>
+            </a>
+            <a href="contactos.html" class="nav-card card">
+                <i class="fas fa-envelope"></i>
+                <h3>Contactos</h3>
+                <p>Comunícate con nosotros</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2025 SwiftSolve. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Innovación • Calidad • Compromiso
+        </p>
+    </footer>
+
+    <!-- Scripts de interacción y animaciones -->
+    <script src="script.js"></script>
+</body>
+</html>
+

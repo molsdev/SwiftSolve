@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSolve - Contactos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado decorativo -->
+    <div class="bg-animation"></div>
+
+    <!-- Encabezado principal con logo, título y botón de login -->
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 0.7rem;">
+                <img src="img/logo.png" alt="Logo SwiftSolve" style="height:48px; width:auto; object-fit:contain; display:block;" />
+                <a href="index.html" class="logo">SwiftSolve</a>
+            </div>
+            <h1 class="header-title">Innovación en Desarrollo de Software</h1>
+            <button class="login-btn" id="loginBtn">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal para Login (ventana emergente de inicio de sesión) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <form class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+
+                <button type="submit">
+                    <i class="fas fa-sign-in-alt"></i> Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">Introducción</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="mision-vision.html">Misión & Visión</a>
+            <a href="valores.html">Valores</a>
+            <a href="paleta.html">Colores</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="metodologia.html">Metodología</a>
+            <a href="contactos.html">Contactos</a>
+            <div id="audioContainer" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                <button id="audioBtn" class="audio-btn">
+                    Audio
+                </button>
+                <audio id="audioPlayer" src="aud/Discurso.mp3" controls style="display: none; margin-left: 0.5rem; border-radius: 20px;"></audio>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de contactos y datos de la empresa -->
+    <section id="contactos" class="fade-in">
+        <h2>Contáctanos</h2>
+        <div class="card">
+            <div class="contacts">
+                <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:3508085470">350 808 5470</a></p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong></p>
+                <p style="margin-left: 2rem;">
+                    <a href="mailto:edwinalexandermolinasanabria@gmail.com">edwinalexandermolinasanabria@gmail.com</a>
+                </p>
+                <p style="margin-left: 2rem;">
+                    <a href="mailto:juandachacon56@gmail.com">juandachacon56@gmail.com</a>
+                </p>
+                <p><i class="fas fa-globe"></i> <strong>Sitio web:</strong> <a href="http://www.swiftsolve.com" target="_blank">www.swiftsolve.com</a></p>
+                <p><i class="fab fa-twitter"></i> <strong>Redes sociales:</strong> <a href="https://x.com/swiftsolve25_oficial" target="_blank">@swiftsolve25_oficial</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2025 SwiftSolve. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Innovación • Calidad • Compromiso
+        </p>
+    </footer>
+
+    <!-- Scripts de interacción y animaciones -->
+    <script src="script.js"></script>
+</body>
+</html>
