@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSolve - Estructura Empresarial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado decorativo -->
+    <div class="bg-animation"></div>
+
+    <!-- Encabezado principal con logo, título y botón de login -->
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 0.7rem;">
+                <img src="img/logo.png" alt="Logo SwiftSolve" style="height:48px; width:auto; object-fit:contain; display:block;" />
+                <a href="index.html" class="logo">SwiftSolve</a>
+            </div>
+            <h1 class="header-title">Innovación en Desarrollo de Software</h1>
+            <button class="login-btn" id="loginBtn">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal para Login (ventana emergente de inicio de sesión) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <form class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+
+                <button type="submit">
+                    <i class="fas fa-sign-in-alt"></i> Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <nav>
+        <div class="nav-content">
+            <a href="intro.html">Introducción</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="mision-vision.html">Misión & Visión</a>
+            <a href="valores.html">Valores</a>
+            <a href="paleta.html">Colores</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="metodologia.html">Metodología</a>
+            <a href="contactos.html">Contactos</a>
+            <div id="audioContainer" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                <button id="audioBtn" class="audio-btn">
+                    Audio
+                </button>
+                <audio id="audioPlayer" src="aud/Discurso.mp3" controls style="display: none; margin-left: 0.5rem; border-radius: 20px;"></audio>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de estructura empresarial -->
+    <section id="estructura" class="fade-in">
+        <h2>Estructura Empresarial</h2>
+        <div class="structure-level card">
+            <h4>Nivel Ejecutivo</h4>
+            <ul>
+                <li><strong>Consejo de Administración:</strong> Define la visión tecnológica y aprueba inversiones en I+D.</li>
+                <li><strong>Director General (CEO):</strong> Encargado de ejecutar la visión aprobada y supervisar todas las áreas funcionales.</li>
+            </ul>
+        </div>
+        <div class="structure-level card">
+            <h4>Dirección Intermedia</h4>
+            <ul>
+                <li><strong>CTO (Chief Technology Officer):</strong> Administra la arquitectura de software, la innovación y los equipos técnicos.</li>
+                <li><strong>Director de Desarrollo de Software:</strong> Supervisa equipos de programación y ciclos de vida del producto.</li>
+                <li><strong>Director de Operaciones (COO):</strong> Optimiza infraestructura cloud y DevOps.</li>
+                <li><strong>Director de Marketing Digital:</strong> Promueve soluciones SaaS en modelos B2B/B2C.</li>
+            </ul>
+        </div>
+        <div class="structure-level card">
+            <h4>Equipos Técnicos y Funcionales</h4>
+            <ul>
+                <li><strong>Desarrolladores:</strong> Codifican, revisan y automatizan aplicaciones (Frontend, Backend, Full-Stack).</li>
+                <li><strong>QA Testing:</strong> Asegura la calidad mediante pruebas manuales y automatizadas.</li>
+                <li><strong>DevOps & Cloud:</strong> Gestiona despliegues en nubes como AWS o Azure.</li>
+                <li><strong>Data Science & AI:</strong> Desarrolla modelos de Machine Learning y análisis de datos.</li>
+                <li><strong>Soporte Técnico:</strong> Provee ayuda técnica y recopila opiniones de clientes.</li>
+                <li><strong>Educadores:</strong> Capacitan a los equipos en los servicios que se ofrecen.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2025 SwiftSolve. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Innovación • Calidad • Compromiso
+        </p>
+    </footer>
+
+    <!-- Scripts de interacción y animaciones -->
+    <script src="script.js"></script>
+</body>
+</html>

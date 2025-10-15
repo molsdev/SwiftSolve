@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftSolve - Servicios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo animado decorativo -->
+    <div class="bg-animation"></div>
+
+    <!-- Encabezado principal con logo, título y botón de login -->
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 0.7rem;">
+                <img src="img/logo.png" alt="Logo SwiftSolve" style="height:48px; width:auto; object-fit:contain; display:block;" />
+                <a href="index.html" class="logo">SwiftSolve</a>
+            </div>
+            <h1 class="header-title">Innovación en Desarrollo de Software</h1>
+            <button class="login-btn" id="loginBtn">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+    </header>
+
+    <!-- Modal para Login (ventana emergente de inicio de sesión) -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <form class="login-form">
+                <h2>Iniciar Sesión</h2>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" placeholder="Ingrese su usuario" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+
+                <button type="submit">
+                    <i class="fas fa-sign-in-alt"></i> Ingresar
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Barra de navegación principal -->
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">Introducción</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="mision-vision.html">Misión & Visión</a>
+            <a href="valores.html">Valores</a>
+            <a href="paleta.html">Colores</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="metodologia.html">Metodología</a>
+            <a href="contactos.html">Contactos</a>
+            <div id="audioContainer" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                <button id="audioBtn" class="audio-btn">
+                    Audio
+                </button>
+                <audio id="audioPlayer" src="aud/Discurso.mp3" controls style="display: none; margin-left: 0.5rem; border-radius: 20px;"></audio>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de servicios ofrecidos -->
+    <section id="servicios" class="fade-in">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-item card">
+                <img src="img/servicio1.png" alt="Desarrollo a Medida" class="service-image" />
+                <h3><i class="fas fa-code"></i> Desarrollo a Medida</h3>
+                <p>Creamos soluciones personalizadas, adaptadas a las necesidades específicas de cada proyecto, asegurando eficiencia, escalabilidad y alto rendimiento.</p>
+            </div>
+            <div class="service-item card">
+                <img src="img/servicio2.png" alt="Aplicaciones Web" class="service-image" />
+                <h3><i class="fas fa-globe"></i> Aplicaciones Web</h3>
+                <p>Diseñamos y programamos aplicaciones web modernas, seguras y responsivas para mejorar la experiencia de usuario y optimizar los procesos empresariales.</p>
+            </div>
+            <div class="service-item card">
+                <img src="img/servicio3.png" alt="Apps Móviles" class="service-image" />
+                <h3><i class="fas fa-mobile-alt"></i> Apps Móviles</h3>
+                <p>Creamos aplicaciones móviles con tecnología de vanguardia, garantizando funcionalidad, usabilidad y una experiencia fluida en todas las plataformas.</p>
+            </div>
+            <div class="service-item card">
+                <img src="img/servicio4.png" alt="Automatización" class="service-image" />
+                <h3><i class="fas fa-robot"></i> Automatización</h3>
+                <p>Implementamos soluciones que automatizan tareas repetitivas y mejoran la eficiencia operativa en diversas áreas empresariales.</p>
+            </div>
+            <div class="service-item card">
+                <img src="img/servicio5.png" alt="Integración de APIs" class="service-image" />
+                <h3><i class="fas fa-plug"></i> Integración de APIs</h3>
+                <p>Conectamos y sincronizamos diferentes plataformas, bases de datos y servicios a través de integraciones personalizadas con APIs.</p>
+            </div>
+            <div class="service-item card">
+                <img src="img/servicio6.png" alt="Ciberseguridad" class="service-image" />
+                <h3><i class="fas fa-shield-alt"></i> Ciberseguridad</h3>
+                <p>Garantizamos la seguridad de la información con soluciones avanzadas de protección contra amenazas cibernéticas y vulnerabilidades.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <p>&copy; 2025 SwiftSolve. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+            Innovación • Calidad • Compromiso
+        </p>
+    </footer>
+
+    <!-- Scripts de interacción y animaciones -->
+    <script src="script.js"></script>
+</body>
+</html>

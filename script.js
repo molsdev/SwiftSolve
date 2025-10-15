@@ -200,3 +200,20 @@
                 konamiCode = [];
             }
         });
+// Audio button functionality
+const audioContainer = document.getElementById("audioContainer");
+const audioPlayerElement = document.getElementById("audioPlayer");
+let isExpanded = false;
+
+document.getElementById("audioBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+    if (isExpanded) {
+        // Collapse
+        audioPlayerElement.style.display = "none";
+        isExpanded = false;
+    } else {
+        // Expand
+        audioPlayerElement.style.display = "inline-block";
+        isExpanded = true;
+    }
+});

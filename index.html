@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SwiftSolve - Innovación en Desarrollo de Software</title>
+    <title>SwiftSolve - Inicio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -11,13 +11,13 @@
 <body>
     <!-- Fondo animado decorativo -->
     <div class="bg-animation"></div>
-    
+
     <!-- Encabezado principal con logo, título y botón de login -->
     <header>
         <div class="header-content">
             <div style="display: flex; align-items: center; gap: 0.7rem;">
                 <img src="img/logo.png" alt="Logo SwiftSolve" style="height:48px; width:auto; object-fit:contain; display:block;" />
-                <a href="#" class="logo">SwiftSolve</a>
+                <a href="index.html" class="logo">SwiftSolve</a>
             </div>
             <h1 class="header-title">Innovación en Desarrollo de Software</h1>
             <button class="login-btn" id="loginBtn">
@@ -34,10 +34,10 @@
                 <h2>Iniciar Sesión</h2>
                 <label for="username">Usuario:</label>
                 <input type="text" id="username" placeholder="Ingrese su usuario" required>
-                
+
                 <label for="password">Contraseña:</label>
                 <input type="password" id="password" placeholder="Ingrese su contraseña" required>
-                
+
                 <button type="submit">
                     <i class="fas fa-sign-in-alt"></i> Ingresar
                 </button>
@@ -48,197 +48,84 @@
     <!-- Barra de navegación principal -->
     <nav>
         <div class="nav-content">
-            <a href="#intro"><i class="fas fa-home"></i> Introducción</a>
-            <a href="#estructura"><i class="fas fa-sitemap"></i> Estructura</a>
-            <a href="#mision-vision"><i class="fas fa-bullseye"></i> Misión & Visión</a>
-            <a href="#valores"><i class="fas fa-gem"></i> Valores</a>
-            <a href="#paleta"><i class="fas fa-palette"></i> Colores</a>
-            <a href="#servicios"><i class="fas fa-cogs"></i> Servicios</a>
-            <a href="#metodologia"><i class="fas fa-tasks"></i> Metodología</a>
-            <a href="#contactos"><i class="fas fa-envelope"></i> Contactos</a>
+            <a href="intro.html">Introducción</a>
+            <a href="estructura.html">Estructura</a>
+            <a href="mision-vision.html">Misión & Visión</a>
+            <a href="valores.html">Valores</a>
+            <a href="paleta.html">Colores</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="metodologia.html">Metodología</a>
+            <a href="contactos.html">Contactos</a>
+            <div id="audioContainer" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-left: 1rem;">
+                <button id="audioBtn" class="audio-btn">
+                    Audio
+                </button>
+                <audio id="audioPlayer" src="aud/Discurso.mp3" controls style="display: none; margin-left: 0.5rem; border-radius: 20px;"></audio>
+            </div>
         </div>
     </nav>
 
-    <!-- Sección de introducción -->
-    <section id="intro" class="fade-in">
+    <!-- Sección de bienvenida -->
+    <section id="welcome" class="fade-in">
         <h2>Bienvenido a SwiftSolve</h2>
         <div class="card">
             <p style="font-size: 1.2rem; font-weight: 500; margin-bottom: 1.5rem;">Transformamos ideas en soluciones tecnológicas eficientes y escalables.</p>
+            <p>En SwiftSolve, creemos que la tecnología es el puente entre las ideas innovadoras y su materialización en el mundo real. Nuestra pasión por el desarrollo de software nos impulsa a crear soluciones que no solo resuelven problemas actuales, sino que anticipan las necesidades futuras de nuestros clientes.</p>
+            <p>Con un enfoque centrado en la calidad, la innovación y la eficiencia, trabajamos mano a mano con empresas de diversos sectores para desarrollar aplicaciones web, móviles y sistemas empresariales que optimicen procesos, aumenten la productividad y generen un impacto positivo en el mercado.</p>
+            <p>Nuestro equipo multidisciplinario combina experiencia técnica con visión estratégica, asegurando que cada proyecto se ejecute con los más altos estándares de calidad y siguiendo las mejores prácticas de la industria.</p>
             <p>Somos una empresa especializada en el desarrollo de software, brindando herramientas innovadoras para optimizar procesos, mejorar la productividad y potenciar el crecimiento de negocios en diferentes industrias.</p>
             <p>Nuestro equipo de expertos en programación y tecnología trabaja con pasión y compromiso para ofrecer productos de alta calidad, adaptados a las necesidades de cada cliente. Desde aplicaciones web y móviles hasta soluciones empresariales avanzadas, en SwiftSolve convertimos los desafíos en oportunidades a través de la tecnología.</p>
-        </div>
-    </section>
-
-    <!-- Sección de estructura empresarial -->
-    <section id="estructura" class="fade-in">
-        <h2>Estructura Empresarial</h2>
-        <div class="structure-level card">
-            <h4>Nivel Ejecutivo</h4>
-            <ul>
-                <li><strong>Consejo de Administración:</strong> Define la visión tecnológica y aprueba inversiones en I+D.</li>
-                <li><strong>Director General (CEO):</strong> Encargado de ejecutar la visión aprobada y supervisar todas las áreas funcionales.</li>
-            </ul>
-        </div>
-        <div class="structure-level card">
-            <h4>Dirección Intermedia</h4>
-            <ul>
-                <li><strong>CTO (Chief Technology Officer):</strong> Administra la arquitectura de software, la innovación y los equipos técnicos.</li>
-                <li><strong>Director de Desarrollo de Software:</strong> Supervisa equipos de programación y ciclos de vida del producto.</li>
-                <li><strong>Director de Operaciones (COO):</strong> Optimiza infraestructura cloud y DevOps.</li>
-                <li><strong>Director de Marketing Digital:</strong> Promueve soluciones SaaS en modelos B2B/B2C.</li>
-            </ul>
-        </div>
-        <div class="structure-level card">
-            <h4>Equipos Técnicos y Funcionales</h4>
-            <ul>
-                <li><strong>Desarrolladores:</strong> Codifican, revisan y automatizan aplicaciones (Frontend, Backend, Full-Stack).</li>
-                <li><strong>QA Testing:</strong> Asegura la calidad mediante pruebas manuales y automatizadas.</li>
-                <li><strong>DevOps & Cloud:</strong> Gestiona despliegues en nubes como AWS o Azure.</li>
-                <li><strong>Data Science & AI:</strong> Desarrolla modelos de Machine Learning y análisis de datos.</li>
-                <li><strong>Soporte Técnico:</strong> Provee ayuda técnica y recopila opiniones de clientes.</li>
-                <li><strong>Educadores:</strong> Capacitan a los equipos en los servicios que se ofrecen.</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Sección de misión y visión -->
-    <section id="mision-vision" class="fade-in">
-        <h2>Misión y Visión</h2>
-        <div class="card">
-            <h3 style="color: var(--primary-green); margin-bottom: 1rem;">🎯 Misión</h3>
-            <p>Optimizar y desarrollar software innovador y eficiente. Brindar soluciones tecnológicas que impulsen el acercamiento a nuevas técnicas de programación. A través de nuestro compromiso con la calidad, la creatividad y la mejora continua, trabajamos para facilitar el acceso a herramientas digitales que generen un impacto positivo en la sociedad, fomentando el desarrollo profesional y la inclusión en el mundo tecnológico.</p>
-            
-            <h3 style="color: var(--primary-green); margin: 2rem 0 1rem;">🚀 Visión</h3>
-            <p>Convertirnos en una empresa líder en el desarrollo de software, impulsando la innovación y la transformación digital a nivel global. Expandir nuestro impacto creando soluciones tecnológicas de alto valor, generando oportunidades de empleo y colaborando con empresas y comunidades para construir un futuro más conectado, eficiente y accesible.</p>    
-        </div>
-    </section>
-
-    <!-- Sección de valores de la empresa -->
-    <section id="valores" class="fade-in">  
-        <h2>Valores</h2>
-        <div class="card">
-        <h3 style="color: var(--primary-green); margin: 2rem 0 1rem;">💎 Valores</h3>
-            <p>En SwiftSolve, los valores son el motor que impulsa nuestra pasión por la tecnología y el desarrollo de software. Creemos en la innovación, la excelencia y el compromiso con nuestros clientes para crear soluciones digitales que transformen negocios y generen impacto.</p>
-            <ul class="values-list">
-                <li class="card">🚀 <strong>Innovación:</strong> Buscamos constantemente nuevas tecnologías y metodologías para ofrecer soluciones eficientes y de vanguardia.</li>
-                <li class="card">⚡ <strong>Calidad:</strong> Nos enfocamos en desarrollar software robusto, escalable y optimizado para garantizar el mejor rendimiento en cada trabajo.</li>
-                <li class="card">🤝 <strong>Compromiso:</strong> Nos involucramos con cada proyecto como si fuera propio, asegurándonos de cumplir con los objetivos y superar las expectativas.</li>
-                <li class="card">👥 <strong>Trabajo en equipo:</strong> Fomentamos la colaboración y el aprendizaje continuo, creando un entorno donde la creatividad y la tecnología se combinan.</li>
-                <li class="card">🎯 <strong>Orientación al cliente:</strong> Entendemos las necesidades de nuestros clientes y trabajamos en estrecha colaboración para ofrecer soluciones personalizadas.</li>
-                <li class="card">🔒 <strong>Ética y transparencia:</strong> Actuamos con honestidad e integridad en cada paso, construyendo relaciones basadas en la confianza y la responsabilidad.</li>
-            </ul>
-        </div></section>
-
-    <!-- Sección de paleta de colores corporativos -->
-    <section id="paleta" class="fade-in">
-        <h2>Paleta de Colores</h2>
-        <div class="color-palette">
-            <div class="color-item card float-animation">
-                <div class="color-swatch" style="background: linear-gradient(135deg, #00d084, #00a86b);"></div>
-                <h4>🌱 Crecimiento y Progreso</h4>
-                <p>El verde vibrante simboliza la innovación constante y el compromiso de SwiftSolve con el avance tecnológico. Representa el crecimiento tanto de la empresa como de sus clientes, a través de soluciones inteligentes que impulsan el desarrollo sostenido.</p>
-            </div>
-            <div class="color-item card float-animation" style="animation-delay: 0.5s;">
-                <div class="color-swatch" style="background: linear-gradient(135deg, #1a1a1a, #0a0a0a);"></div>
-                <h4>💼 Elegancia y Sofisticación</h4>
-                <p>El negro aporta una presencia sólida, seria y profesional. Transmite sofisticación y confianza, posicionando a SwiftSolve como un referente confiable en el sector tech. Su uso da estructura visual y resalta la calidad de nuestros servicios.</p>
-            </div>
-            <div class="color-item card float-animation" style="animation-delay: 1s;">
-                <div class="color-swatch" style="background: radial-gradient(circle, #ffffff, #f8fafc); border: 2px solid #e2e8f0;"></div>
-                <h4>✨ Pureza y Precisión</h4>
-                <p>El blanco complementa el conjunto con una sensación de orden, limpieza y claridad técnica. Es un símbolo de transparencia, precisión y eficiencia en cada solución ofrecida. SwiftSolve trabaja con un enfoque limpio y directo.</p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="intro.html" class="cta-btn">Explorar Introducción</a>
+                <a href="servicios.html" class="cta-btn secondary">Ver Servicios</a>
             </div>
         </div>
     </section>
 
-    <!-- Sección de servicios ofrecidos -->
-    <section id="servicios" class="fade-in">
-        <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service-item card">
-                <img src="img/servicio1.png" alt="Desarrollo a Medida" />
-                <h3><i class="fas fa-code"></i> Desarrollo a Medida</h3>
-                <p>Creamos soluciones personalizadas, adaptadas a las necesidades específicas de cada proyecto, asegurando eficiencia, escalabilidad y alto rendimiento.</p>
-            </div>
-            <div class="service-item card">
-                <img src="img/servicio2.png" alt="Aplicaciones Web" />
-                <h3><i class="fas fa-globe"></i> Aplicaciones Web</h3>
-                <p>Diseñamos y programamos aplicaciones web modernas, seguras y responsivas para mejorar la experiencia de usuario y optimizar los procesos empresariales.</p>
-            </div>
-            <div class="service-item card">
-                <img src="img/servicio3.png" alt="Apps Móviles" />
-                <h3><i class="fas fa-mobile-alt"></i> Apps Móviles</h3>
-                <p>Creamos aplicaciones móviles con tecnología de vanguardia, garantizando funcionalidad, usabilidad y una experiencia fluida en todas las plataformas.</p>
-            </div>
-            <div class="service-item card">
-                <img src="img/servicio4.png" alt="Automatización" />
-                <h3><i class="fas fa-robot"></i> Automatización</h3>
-                <p>Implementamos soluciones que automatizan tareas repetitivas y mejoran la eficiencia operativa en diversas áreas empresariales.</p>
-            </div>
-            <div class="service-item card">
-                <img src="img/servicio5.png" alt="Integración de APIs" />
-                <h3><i class="fas fa-plug"></i> Integración de APIs</h3>
-                <p>Conectamos y sincronizamos diferentes plataformas, bases de datos y servicios a través de integraciones personalizadas con APIs.</p>
-            </div>
-            <div class="service-item card">
-                <img src="img/servicio6.png" alt="Ciberseguridad" />
-                <h3><i class="fas fa-shield-alt"></i> Ciberseguridad</h3>
-                <p>Garantizamos la seguridad de la información con soluciones avanzadas de protección contra amenazas cibernéticas y vulnerabilidades.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de metodología de trabajo -->
-    <section id="metodologia" class="fade-in">
-        <h2>Metodología de Trabajo</h2>
-        <div class="methodology-steps">
-            <div class="methodology-step" data-step="1">
-                <h3>📋 Análisis de Requisitos</h3>
-                <p>Evaluación detallada de necesidades y objetivos</p>
-            </div>
-            <div class="methodology-step" data-step="2">
-                <h3>🎨 Diseño UX/UI</h3>
-                <p>Creación de interfaces intuitivas y experiencias de usuario excepcionales</p>
-            </div>
-            <div class="methodology-step" data-step="3">
-                <h3>⚡ Desarrollo Ágil</h3>
-                <p>Implementación usando Scrum y Kanban para máxima eficiencia</p>
-            </div>
-            <div class="methodology-step" data-step="4">
-                <h3>🔍 Control de Calidad</h3>
-                <p>Pruebas exhaustivas y validación de funcionalidades</p>
-            </div>
-            <div class="methodology-step" data-step="5">
-                <h3>🚀 Entrega y Soporte</h3>
-                <p>Implementación exitosa con soporte continuo post-lanzamiento</p>
-            </div>
-        </div>
-        <div style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.2rem; font-weight: 600; color: var(--primary-green); margin-bottom: 1rem;">
-                ✨ Profesionalismo y estructura en cada proyecto
-            </p>
-            <p style="font-style: italic; color: var(--gray-medium); font-size: 1.1rem;">
-                ¿Tu empresa aún sigue usando procesos manuales? Es hora de evolucionar.
-            </p>
-        </div>
-    </section>
-
-    <!-- Sección de contactos y datos de la empresa -->
-    <section id="contactos" class="fade-in">
-        <h2>Contáctanos</h2>
-        <div class="card">
-            <div class="contacts">
-                <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> <a href="tel:3508085470">350 808 5470</a></p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong></p>
-                <p style="margin-left: 2rem;">
-                    <a href="mailto:edwinalexandermolinasanabria@gmail.com">edwinalexandermolinasanabria@gmail.com</a>
-                </p>
-                <p style="margin-left: 2rem;">
-                    <a href="mailto:juandachacon56@gmail.com">juandachacon56@gmail.com</a>
-                </p>
-                <p><i class="fas fa-globe"></i> <strong>Sitio web:</strong> <a href="http://www.swiftsolve.com" target="_blank">www.swiftsolve.com</a></p>
-                <p><i class="fab fa-twitter"></i> <strong>Redes sociales:</strong> <a href="https://x.com/swiftsolve25_oficial" target="_blank">@swiftsolve25_oficial</a></p>
-            </div>
+    <!-- Sección de navegación rápida -->
+    <section id="quick-nav" class="fade-in">
+        <h2>Navega por Nuestras Secciones</h2>
+        <div class="quick-nav-grid">
+            <a href="intro.html" class="nav-card card">
+                <i class="fas fa-home"></i>
+                <h3>Introducción</h3>
+                <p>Conoce nuestra empresa y visión</p>
+            </a>
+            <a href="estructura.html" class="nav-card card">
+                <i class="fas fa-sitemap"></i>
+                <h3>Estructura</h3>
+                <p>Organización y equipos</p>
+            </a>
+            <a href="mision-vision.html" class="nav-card card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Misión & Visión</h3>
+                <p>Nuestros objetivos y futuro</p>
+            </a>
+            <a href="valores.html" class="nav-card card">
+                <i class="fas fa-gem"></i>
+                <h3>Valores</h3>
+                <p>Principios que nos guían</p>
+            </a>
+            <a href="paleta.html" class="nav-card card">
+                <i class="fas fa-palette"></i>
+                <h3>Colores</h3>
+                <p>Identidad visual</p>
+            </a>
+            <a href="servicios.html" class="nav-card card">
+                <i class="fas fa-cogs"></i>
+                <h3>Servicios</h3>
+                <p>Lo que ofrecemos</p>
+            </a>
+            <a href="metodologia.html" class="nav-card card">
+                <i class="fas fa-tasks"></i>
+                <h3>Metodología</h3>
+                <p>Cómo trabajamos</p>
+            </a>
+            <a href="contactos.html" class="nav-card card">
+                <i class="fas fa-envelope"></i>
+                <h3>Contactos</h3>
+                <p>Comunícate con nosotros</p>
+            </a>
         </div>
     </section>
 
@@ -254,3 +141,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
